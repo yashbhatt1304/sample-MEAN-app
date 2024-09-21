@@ -1,0 +1,15 @@
+services:
+  backend:
+    build:
+      context: ./ResumeBuilderBackend
+      dockerfile: Dockerfile
+    ports:
+      - "4292:4292"
+  frontend:
+    build:
+      context: ./ResumeBuilderBackend
+      dockerfile: Dockerfile
+    ports:
+      - "4200:4200"
+    depends_on:
+      - backend
