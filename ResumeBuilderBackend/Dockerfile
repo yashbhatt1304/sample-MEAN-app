@@ -1,7 +1,8 @@
 FROM node:20
 WORKDIR /app
 COPY . .
-RUN npm install -f
-RUN npm i -g typescript
-EXPOSE 3001
+RUN npm i -g -f chromium
+# RUN npm i -g -f chromium-browser
+RUN npm install
+EXPOSE 4292
 CMD [ "npm", "start" ]
