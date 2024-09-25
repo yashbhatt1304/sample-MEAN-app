@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: resume-backend-service
+  namespace: resume-backend
+spec:
+  type: ClusterIP
+  selector:
+    app: resume-backend
+  ports:
+  - port: 4292
+    targetPort: 4292

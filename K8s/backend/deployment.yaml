@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: resume-backend-deployment
+  namespace: resume-backend
+spec:
+  selector:
+    matchLabels:
+      app: resume-backend
+  template:
+    metadata:
+      labels:
+        app: resume-backend
+    spec:
+      containers:
+      - name: resume-backend
+        image: yashbbhatt/resume-builder-backend:0.0.1
+        ports:
+        - containerPort: 4292
