@@ -13,6 +13,11 @@
 4. Git & Github
 5. AWS ECR
 
+## Steps
+1. Images pushed to ECR repository.
+![Frontend-ECR](./snapshots/ECR-frontend.png)
+![Backend-ECR](./snapshots/ECR-backend.png)
+
 ## References & Links
 Follow the link for Resume builder app used here [Resume Builder App](https://github.com/UnpredictablePrashant/ResumeAI.git).
 
